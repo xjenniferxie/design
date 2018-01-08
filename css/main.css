@@ -19,14 +19,14 @@ nav {
   height: 50px;
   position: fixed;
   overflow: hidden;
-  transition: background-color 0.4s ease-out;
+  /*transition: background-color 0.4s ease-out;*/
 }
 
-nav.scroll {
+/*nav.scroll {
   background-color: #FFF;
   color: #574162;
   border-bottom: 1px solid #574162;
-}
+}*/
 
 nav ul {
   margin-right: 20px;
@@ -137,7 +137,7 @@ div#h4-box {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   text-align: center;
   margin: 0px;
