@@ -1,0 +1,240 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #574162;
+}
+
+/* ------------- navigation ------------- */
+nav {
+  color: #FFF;
+  clear: both;
+  background-color: rgba(124,98,129,0.5);
+  z-index: 10;
+  margin: 0px;
+  padding: 0px 5px 5px 5px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  overflow: hidden;
+  transition: background-color 0.4s ease-out;
+}
+
+nav.scroll {
+  background-color: #FFF;
+  color: #574162;
+  border-bottom: 1px solid #574162;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav li {
+  font-size: 16px;
+  display: inline;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+
+span.left {
+  float: left;
+  display: block;
+}
+
+span.right {
+  float: right;
+  display: block;
+}  
+
+li#logo {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li a:hover, nav li a:active {
+  color: #9974af;
+}
+
+/* ------------- front page ------------- */
+h1, h2{
+  color: #FFF;
+  text-align: center;
+  margin: inherit;
+  padding: inherit;
+}
+
+h1 {
+  font-family: "Pacifico", serif;
+  font-weight: normal;
+  font-size: 144px;
+  padding-top: 22vh;
+
+  position: relative;
+  top: 0.28em;
+  right: 0.1em;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+img#scroll {
+  display: block;
+  margin: 23vh auto 0vh auto;
+}
+
+/* ------------- heading styling ------------- */
+
+h3 {
+  text-align: center;
+  margin: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  font-size: 52px;
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+h3.pgheader {
+  padding-top: 100px;
+}
+
+/* ------------- about page ------------- */
+
+div#about-section {
+  width: 920px;
+  margin: auto;
+}
+
+p.about-paragraph {
+  color: #232323;
+  line-height: 1.4em;
+  width: 410px;
+  margin-bottom: 1em;
+}
+
+br {
+  display: block;
+  line-height: 10px;
+}
+
+div#h4-box {
+  float: right;
+  clear: right;
+  width: 480px;
+}
+
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+
+img#about-pic {
+  width: 480px;
+  float: right;
+  clear: right;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: #574162;
+  background-color: transparent;
+  border: 2px solid #574162;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+button:hover {
+  color: #9974af;
+  border: 2px solid #9974af;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* ------------- contact page ------------- */
+.white {
+  color: #FFF;
+}
+
+p#contact-text {
+  line-height: 1.8em;
+  padding: 50px 0px;
+  float: left;
+}
+
+div#contact-div {
+  margin: auto;
+  width: 740px;
+  column-count: 2;
+  column-gap: 50px;
+  column-width: 50%;
+}
+
+h3#contact-header {
+  padding: 100px 0px;
+  float: right;
+}
+
+a.nostyle {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a.nostyle:hover, a.nostyle:active {
+  color: #9974af;
+}
+
+/* ------------- grid styling ------------- */
+
+div.grid {
+  max-width: 1060px;
+  float: none;
+  margin: auto; 
+}
+
+div.small {
+  max-width: 960px;
+}
+
+#portfolio {  
+    margin: 1em 0;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.5em;
+    -moz-column-gap: 1.5em;
+    column-gap: 1.5em;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%;
+    margin-bottom: 20vh;
+}
+
+.tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
