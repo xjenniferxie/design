@@ -6,7 +6,7 @@ span.text-content {
 }
 
 div#subwork {
-  max-width: 720px;
+  max-width: 760px;
   float: none;
   margin: auto; 
 }
@@ -42,22 +42,22 @@ ul.img-list {
 
 ul.img-list li {
   display: inline-block;
-  height: 360px;
+  height: 380px;
   margin: 0;  /*changed used to be 0 1em 1em 0*/
   position: relative;
-  width: 360px;
+  width: 380px;
 }
 
 span.text-content {
-  background: rgba(87,65,98,0.5);
+  background: rgba(124,98,129,0.5);
   color: white;
   cursor: pointer;
   display: table;
-  height: 360px;
+  height: 380px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 360px;
+  width: 380px;
 }
 
 span.text-content span {
@@ -67,15 +67,15 @@ span.text-content span {
 }
 
 span.text-content {
-  background: rgba(87,65,98,0.5);
+  background: rgba(124,98,129,0.5);
   color: white;
   cursor: pointer;
   display: table;
-  height: 360px;
+  height: 380px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 360px;
+  width: 380px;
   opacity: 0;
 }
 
@@ -84,15 +84,15 @@ ul.img-list li:hover span.text-content {
 }
 
 span.text-content {
-  background: rgba(87,65,98,0.8);
+  background: rgba(124,98,129,0.5);
   color: white;
   cursor: pointer;
   display: table;
-  height: 360px;
+  height: 380px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 360px;
+  width: 380px;
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -139,7 +139,7 @@ span.text-content {
 }
 
 .mid {
-  height: 1000px;
+  height: 1040px;
 }
 
 .end {
