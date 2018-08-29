@@ -11,9 +11,12 @@ h3 is top of other pages -->
 	<head>
 		<title>Jennifer Xie</title>
 		<link href="css/main.css" type="text/css" rel="stylesheet" />
-		<link href="css/effects.css" type="text/css" rel="stylesheet" />
+		<link href="css/grid.css" type="text/css" rel="stylesheet" />
+
+		<link href="css/effects.css" type="text/css" rel="stylesheet"/>
+
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
 		<meta name="format-detection" content="telephone=no">
 	</head>
 
@@ -43,38 +46,28 @@ h3 is top of other pages -->
 
 			<div class="section static mid" id="work">
 				<h3>work</h3>
-				<div id="subwork">
-					<div id="main-portfolio"> 
-						<ul class="img-list">
-
-						<li> 
-							<a href="illustration.html">
-								<img src="images/icon3-01.png" width="380" height="380" class="portfolio-img"> 
-								<span class="text-content"><span></span></span>
-							</a>
-						</li>
-						<li> 
-							<a href="photography.html">
-								<img src="images/icon3-03.png" width="380" height="380" class="portfolio-img"> 
-								<span class="text-content"><span></span></span>
-							</a>
-						</li>
-						<li> 
-							<a href="infographic.html">
-								<img src="images/icon3-02.png" width="380" height="380" class="portfolio-img"> 
-								<span class="text-content"><span></span></span>
-							</a>
-						</li>
-						<li class="tile"> 
-							<a href="https://github.com/xjenniferxie" target="_blank">
-								<img src="images/icon3-04.png" width="380" height="380" class="portfolio-img"> 
-								<span class="text-content"><span></span></span>
-							</a>
-						</li>
-
-						<ul>
-					</div>
-				</div> <!-- end subwork -->
+				<div class="row small-grid"> 
+				    <div class="column">
+				    	<div class="grid-cell">
+				    		<img src="images/icon-04.svg">
+				    		<button onclick="location.href=''" type="button">web + ui/ux</button>
+				    	</div>
+				    	<div class="grid-cell">
+				    		<img src="images/icon-03.svg">
+				    		<button onclick="location.href='photography.html'" type="button">photography</button>
+				    	</div>
+				    </div> 
+				    <div class="column">
+				    	<div class="grid-cell">
+				    		<img src="images/icon-01.svg">
+				    		<button onclick="location.href='illustration.html'" type="button">illustration</button>
+				    	</div>
+				    	<div class="grid-cell">
+				    		<img src="images/icon-02.svg">
+				    		<button onclick="location.href='infographic.html'" type="button">graphic design</button>
+				    	</div>
+				    </div>
+				</div>
 			</div>
 
 			<div class="section parallax bg2" id="about">
@@ -91,9 +84,9 @@ h3 is top of other pages -->
 					<p class="about-paragraph">
 						When I'm not programming or doodling, you can find me dancing, eating dessert, or browsing Netflix. 
 					</p>
-					<form method="get" action="Jennifer_Xie_Resume.pdf" target="_blank">
+					<!-- <form method="get" action="Jennifer_Xie_Resume.pdf" target="_blank">
 						<button type="submit">Download Resume</button>
-					</form>
+					</form> -->
 				</div>	
 			</div>
 

@@ -103,12 +103,13 @@ h3 {
   text-transform: uppercase;
 
   font-size: 52px;
-  padding-top: 90px;
-  padding-bottom: 20px;
 }
 
-h3.pgheader {
-  padding-top: 100px;
+/*TEMPORARY - FIX*/
+
+.section h3 {
+  padding-top: 90px;
+  padding-bottom: 20px;
 }
 
 /* ------------- about page ------------- */
@@ -152,20 +153,23 @@ img#about-pic {
 
 button {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
   color: #574162;
   background-color: transparent;
-  border: 2px solid #574162;
-  padding: 15px 20px;
+  border: 3px solid #574162;
+  border-radius: 10px;
+  padding: 12px 24px;
+
   margin-top: 20px;
+
+  width: 100%;
 }
 
 button:hover {
-  color: #9974af;
-  border: 2px solid #9974af;
+  background-color: #d6c7df;
 }
 
 button:focus {
@@ -205,36 +209,13 @@ a.nostyle:hover, a.nostyle:active {
   color: #9974af;
 }
 
-/* ------------- grid styling ------------- */
-
-div.grid {
-  max-width: 1060px;
-  float: none;
-  margin: auto; 
+/* -------------  subpages ------------- */
+.page-wrapper {
+    padding: 120px 0;
 }
 
-div.small {
-  max-width: 960px;
+.page-wrapper h3 {
+    padding-bottom: 24px;
 }
 
-#portfolio {  
-    margin: 1em 0;
-    -webkit-column-count: 2; 
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1.5em;
-    -moz-column-gap: 1.5em;
-    column-gap: 1.5em;
-    -webkit-column-width: 50%;
-    -moz-column-width: 50%;
-    column-width: 50%;
-    margin-bottom: 20vh;
-}
-
-.tile img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-}
 
