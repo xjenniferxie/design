@@ -1,11 +1,11 @@
 /* For Flexbox grid layout, I used code from https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
 
-/* space controls the space between images in the grid */
+/* Variables to control grid spacing */
 :root {
 	--space: 8px;
 }
 
-* {
+.row, .column, .grid-cell {
     box-sizing: border-box;
 }
 
@@ -16,19 +16,6 @@
     margin: 0 auto;
 }
 
-.normal-grid {
-    max-width: 1000px;
-}
-
-/* home page things - maybe restructure css file */
-.small-grid {
-    max-width: 800px;
-}
-
-.small-grid img {
-    
-}
-
 .grid-cell {
     width: 100%;
     margin-top: calc(var(--space) * 2);
@@ -37,8 +24,13 @@
     padding: 10px 50px;
 }
 
+.normal-grid {
+    max-width: 1000px;
+}
 
-
+.small-grid {
+    max-width: 800px;
+}
 
 /* Create two equal columns that sit next to each other */
 .column {
@@ -54,6 +46,20 @@
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+/* For home page "Work" grid */
+@media (max-width: 800px) {
+    .small-grid {
+        max-width: 400px;
+    }
+
+    .small-grid div.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* For normal grid */
 @media (max-width: 600px) {
     .column {
         flex: 100%;
