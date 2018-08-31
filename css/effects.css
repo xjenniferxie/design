@@ -31,6 +31,11 @@
   background: #FFF;
 }
 
+.end {
+  background: #574162;
+  /*height: 360px;*/
+}
+
 .bg1::after {
   background-image: url("../images/sf_tiny.png");
 }
@@ -39,16 +44,8 @@
   background-image: url("../images/sf2_tiny.png");
 }
 
-/*TEMPORARY CHANGE WHERE THIS GOES?*/
-.small-grid {
-  padding-bottom: 90px;
-}
-
-.mid {
-  height: 1040px;
-}
-
-.end {
-  background: #574162;
-  height: 360px;
+@media (max-width: 800px) {
+  #about {
+    min-height: 1000px;
+  }
 }

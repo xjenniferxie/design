@@ -19,6 +19,8 @@ light purple #d6c7df-->
 
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 		<meta name="format-detection" content="telephone=no">
 	</head>
 
@@ -74,34 +76,50 @@ light purple #d6c7df-->
 
 			<div class="section parallax bg2" id="about">
 				<h3>About</h3>
-				<div id="about-section">
-					<div id="h4-box">
+				<div class="row about-grid">
+					<div class="column">
+						<p class="about-paragraph">
+							Hi! I'm a computer science student at UC Berkeley, and I love to experiment with art and design during my free time. 
+							My portfolio is a combination of work I've done for Berkeley organizations and personal projects. 
+						</p>
+						<p class="about-paragraph">
+							When I'm not programming or doodling, you can find me dancing, eating dessert, or browsing Netflix. 
+						</p>
+						<div id="about-links">
+							<a href="Jennifer_Xie_Resume.pdf" target="_blank">My Resume</a>
+							<a href="https://github.com/xjenniferxie" target="_blank">My Github</a>
+						</div>
+					</div>
+					<div class="column">
 						<h4>skills</h4>
-					</div>		
-					<img src="images/skills.svg" id="about-pic">
-					<p class="about-paragraph">
-						Hi! I'm a computer science student at UC Berkeley, and I love to experiment with art and design during my free time. 
-						My portfolio is a combination of work I've done for Berkeley organizations and personal projects. 
-					</p>
-					<p class="about-paragraph">
-						When I'm not programming or doodling, you can find me dancing, eating dessert, or browsing Netflix. 
-					</p>
-				</div>	
+						<img src="images/skills.svg" id="about-pic">
+					</div>
+				</div>
 			</div>
  
  			<div class="section static end" id="contact">
- 				<div class="white" id="contact-div">
- 					<h3 class="white" id="contact-header">Let's talk</h3>
-	 				<p id="contact-text">
-	 					<a href="https://www.linkedin.com/in/jennifer-xie/" class="nostyle" target="_blank">LinkedIn</a>
-	 					<br />
-	 					<a href="mailto:xjenniferxie@gmail.com" class="nostyle">xjenniferxie@gmail.com</a>
-	 					<br />
-	 					818-472-7975
-	 				</p>
-	 			</div>	
+ 				<h3 id="contact-title">Let's talk</h3>
+ 				<div class="row contact-grid">
+ 					<div class="column-3">
+	 					<a href="https://www.linkedin.com/in/jennifer-xie/" class="contact-link" target="_blank">
+	 						<i class="fab fa-linkedin-in"></i>
+	 						LinkedIn
+	 					</a>
+ 					</div>
+ 					<div class="column-3">
+ 						<a href="mailto:xjenniferxie@gmail.com" class="contact-link" target="_blank">
+ 							<i class="fas fa-envelope"></i>
+ 							xjenniferxie@gmail.com
+ 						</a>
+ 					</div>
+ 					<div class="column-3">
+ 						<a href="https://twitter.com/jennifrxx" class="contact-link" target="_blank">
+ 							<i class="fab fa-twitter"></i>
+ 							@jennifrxx
+ 						</a>
+ 					</div>
+ 				</div>	
 			</div>
-
 		</div> <!-- end wrapper -->
 
 	</body>

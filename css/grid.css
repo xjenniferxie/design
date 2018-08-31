@@ -16,20 +16,11 @@
     margin: 0 auto;
 }
 
-.grid-cell {
-    width: 100%;
-    margin-top: calc(var(--space) * 2);
-    justify-content: center;
-    vertical-align: middle;
-    padding: 10px 50px;
-}
-
-.normal-grid {
-    max-width: 1000px;
-}
-
-.small-grid {
-    max-width: 800px;
+/* Create three equal columns that sit next to each other */
+.column-3 {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0;
 }
 
 /* Create two equal columns that sit next to each other */
@@ -39,21 +30,65 @@
     padding: 0 var(--space);
 }
 
+/* Styling for each individual cell or image */
+.grid-cell {
+    width: 100%;
+    margin-top: calc(var(--space) * 2);
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px 50px;
+}
+
 .column img {
     width: 100%;
     margin-top: calc(var(--space) * 2);
     vertical-align: middle;
 }
 
+/* Custom widths and padding */
+.normal-grid {
+    max-width: 1000px;
+}
+
+.small-grid {
+    max-width: 800px;
+    padding-bottom: 90px;
+}
+
+.about-grid {
+    max-width: 920px;
+    padding: 20px 0;
+}
+
+.about-grid div.column {
+    padding: 0 calc(var(--space) * 2);
+}
+
+.contact-grid {
+    max-width: 920px;
+    padding-bottom: 90px;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
-/* For home page "Work" grid */
+/* For home page "Work" and "About" grid */
 @media (max-width: 800px) {
     .small-grid {
         max-width: 400px;
     }
 
-    .small-grid div.column {
+    .about-grid {
+        max-width: 460px;
+    }
+
+    .small-grid div.column, .about-grid div.column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* For home page "Contact" grid */
+@media (max-width: 650px) {
+    .column-3 {
         flex: 100%;
         max-width: 100%;
     }
