@@ -4,9 +4,9 @@ wrapper = document.getElementsByClassName("wrapper")[0]
 wrapper.addEventListener('scroll', function() {
 	var nav = document.getElementById("navbar")
 	if (wrapper.scrollTop <= 40) {
-		nav.className = '';
+		nav.classList.remove("scroll")
 	} else {
-		nav.className = 'scroll';
+		nav.classList.add("scroll")
 	}
 });
 
