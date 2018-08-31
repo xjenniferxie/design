@@ -1,12 +1,13 @@
 // Change color of navbar on home page when user scrolls
-wrapper = document.getElementsByClassName("wrapper")[0]
+var wrapper = document.getElementsByClassName("wrapper")[0]
+var nav = document.getElementById("navbar")
+nav.classList.add("transparent-nav")
 
 wrapper.addEventListener('scroll', function() {
-	var nav = document.getElementById("navbar")
 	if (wrapper.scrollTop <= 40) {
-		nav.classList.remove("scroll")
+		nav.classList.add("transparent-nav")
 	} else {
-		nav.classList.add("scroll")
+		nav.classList.remove("transparent-nav")
 	}
 });
 
@@ -26,6 +27,7 @@ var contactGrid = document.getElementsByClassName("contact-grid")[0]
 var endHeight = contactGrid.clientHeight + contactTitle.clientHeight
 endSection.style.height = endHeight + "px"
 
+// Recalculate height of sections when window resized
 window.addEventListener('resize', function() {
 	var midHeight = smallGrid.clientHeight + workTitle.clientHeight
 	midSection.style.height = midHeight + "px"
