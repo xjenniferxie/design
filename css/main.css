@@ -158,7 +158,7 @@ button:focus {
 /* ------------- about section ------------- */
 p.about-paragraph {
   color: var(--dark-grey);
-  line-height: 1.4em;
+  line-height: 1.5em;
   margin: 0 0 1em 0;
 }
 
