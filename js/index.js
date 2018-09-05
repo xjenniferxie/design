@@ -33,5 +33,7 @@ function setHeights() {
 
 // Set height when window loaded or resized
 setHeights()
+midSection.addEventListener("load", setHeights());
+endSection.addEventListener("load", setHeights());
 window.addEventListener("load", setHeights());
 window.addEventListener('resize', setHeights());
