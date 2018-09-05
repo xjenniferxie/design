@@ -31,6 +31,10 @@
   background: #FFF;
 }
 
+.mid, .end {
+  height: auto;
+}
+
 .end {
   background: #574162;
 }
