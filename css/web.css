@@ -1,3 +1,5 @@
+/* ------------- Styles specific to web + ui/ux page ------------- */
+
 .web-container {
 	max-width: 800px;
 	margin: 0 auto;
@@ -29,6 +31,14 @@ p.description {
 	color: var(--dark-grey);
 	line-height: 1.5em;
 	margin: 24px 0 0 0;
+}
+
+p.descrption a {
+	color: var(--dark-purple);
+}
+
+p.description a:hover, a:active {
+	color: var(--medium-purple);
 }
 
 .web-project img {
