@@ -31,8 +31,6 @@ function setHeights() {
 	endSection.style.height = endHeight + "px"
 }
 
-// Set height when window loaded
+// Set height when window loaded or resized
 window.addEventListener("load", setHeights());
-
-// Recalculate height of sections when window resized
 window.addEventListener('resize', setHeights());
