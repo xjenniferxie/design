@@ -1,0 +1,68 @@
+/* ------------- Styles specific to web + ui/ux page ------------- */
+
+.web-container {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.web-project {
+	padding: 36px 0;
+}
+
+h5 {
+	font-size: 28px;
+	margin: 36px 0 0 0;
+}
+
+h5 a {
+	color: var(--dark-purple);
+}
+
+h5 a:hover, h5 a:active {
+	color: var(--medium-purple);
+}
+
+p.categories {
+	margin: 16px 0 0 0;
+}
+
+p.description {
+	color: var(--dark-grey);
+	line-height: 1.5em;
+	margin: 24px 0 0 0;
+}
+
+p.descrption a {
+	color: var(--dark-purple);
+}
+
+p.description a:hover, a:active {
+	color: var(--medium-purple);
+}
+
+.web-project img {
+	width: 100%;
+}
+
+@media (max-width: 820px) {
+	.web-container {
+		margin: 0 10px;
+	}
+
+	.web-project {
+		padding: 24px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	h5 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 400px) {
+	h5.long-word {
+		font-size: 20px;
+	}
+}
