@@ -3,39 +3,47 @@
 <html> 
 	<head>
 		<title>Photography</title>
-		<link href="css/main.css" type="text/css" rel="stylesheet" />
-		<link href="css/effects.css" type="text/css" rel="stylesheet" />
+		<link href="css/main.css" type="text/css" rel="stylesheet"/>
+		<link href="css/grid.css" type="text/css" rel="stylesheet"/>
+		<link href="css/effects.css" type="text/css" rel="stylesheet"/>
+
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
 
 	<body>
 		<nav id="navbar">
-			<span class="left">
-				<ul>
-					<li id="logo">Jennifer Xie</li>
-				</ul>
-			</span>
-			<span class="right">
-				<ul>
-					<li><a href="index.html#home">home</a></li>
-					<li><a href="index.html#work">work</a></li>
-					<li><a href="index.html#about">about</a></li>
-					<li><a href="index.html#contact">contact</a></li>
-				</ul>				
-			</span>
+			<a id="logo" href="index.html#home">Jennifer Xie</a>
+			<ul class="nav-menu">
+				<li class="first-nav-item"><a href="index.html#home" class="nav-link">home</a></li>
+				<li><a href="index.html#work" class="nav-link">work</a></li>
+				<li><a href="index.html#about" class="nav-link">about</a></li>
+				<li><a href="index.html#contact" class="nav-link">contact</a></li>
+			</ul>
+			<div class="backdrop"></div>
+			<i class="fas fa-bars"></i>
 		</nav>
 
-		<h3 class="pgheader">photography</h3>
+		<div class="subpage-wrapper">
+			<h3>photography</h3>
 
-		<div class="grid small">
-			<div id="portfolio">
-				<div class="tile"> <img src="images/virginia.jpg" width="480" height="320"> </div>
-				<div class="tile"> <img src="images/beini.jpg" width="480" height="720"> </div>
-				<div class="tile"> <img src="images/shelby.jpg" width="480" height="320"> </div>
-				<div class="tile"> <img src="images/aditi.jpg" width="480" height="720"> </div>
+			<div class="row normal-grid"> 
+			    <div class="column">
+			    	<img src="images/virginia.jpg">
+			    	<img src="images/yerin.jpg">
+			    	<img src="images/joy.jpg">
+			    </div> 
+			    <div class="column">
+			    	<img src="images/shelby.jpg">
+			    	<img src="images/beini.jpg">
+			    	<img src="images/aditi.jpg">
+			    </div>
 			</div>
 		</div>
 
 	</body>	
 </html>
+
+<script src="js/main.js"></script>
+

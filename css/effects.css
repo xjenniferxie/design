@@ -1,109 +1,5 @@
 /* Parallax effect based on code from: https://alligator.io/css/pure-css-parallax/
- * Image overlay effect based on code from: 
- * http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/;
- */
-
-/* ------------- image overlay ------------- */
-
-span.text-content {
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-div#subwork {
-  max-width: 760px;
-  float: none;
-  margin: auto; 
-}
-
-#main-portfolio {  
-  margin: 0em;
-  margin-top: 5px;
-  -webkit-column-count: 2; 
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 0em;
-  -moz-column-gap: 0em;
-  column-gap: 0em;
-  -webkit-column-width: 50%;
-  -moz-column-width: 50%;
-  column-width: 50%;
-}
-
-img.portfolio-img {
-  vertical-align: top;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  margin: 0px;
-}
-
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-ul.img-list li {
-  display: inline-block;
-  height: 380px;
-  margin: 0;  /*changed used to be 0 1em 1em 0*/
-  position: relative;
-  width: 380px;
-}
-
-span.text-content {
-  background: rgba(124,98,129,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 380px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 380px;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-span.text-content {
-  background: rgba(124,98,129,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 380px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 380px;
-  opacity: 0;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-
-span.text-content {
-  background: rgba(124,98,129,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 380px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 380px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
+*/
 
 /* ------------- parallax scrolling ------------- */
 .wrapper {
@@ -135,6 +31,10 @@ span.text-content {
   background: #FFF;
 }
 
+.end {
+  background: #574162;
+}
+
 .bg1::after {
   background-image: url("../images/sf_tiny.png");
 }
@@ -143,12 +43,8 @@ span.text-content {
   background-image: url("../images/sf2_tiny.png");
 }
 
-.mid {
-  height: 1040px;
-}
-
-.end {
-  background: #574162;
-  height: 360px;
-  /*change height to pixels*/
+@media (max-width: 800px) {
+  #about {
+    min-height: 1000px;
+  }
 }
