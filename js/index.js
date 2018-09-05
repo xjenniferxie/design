@@ -17,21 +17,22 @@ wrapper.addEventListener('scroll', function() {
 var midSection = document.getElementsByClassName("mid")[0]
 var workTitle = document.getElementById("work-title")
 var smallGrid = document.getElementsByClassName("small-grid")[0]
-var midHeight = smallGrid.clientHeight + workTitle.clientHeight
-midSection.style.height = midHeight + "px"
 
 // Contact
 var endSection = document.getElementsByClassName("end")[0]
 var contactTitle = document.getElementById("contact-title")
 var contactGrid = document.getElementsByClassName("contact-grid")[0]
-var endHeight = contactGrid.clientHeight + contactTitle.clientHeight
-endSection.style.height = endHeight + "px"
 
-// Recalculate height of sections when window resized
-window.addEventListener('resize', function() {
+function setHeights() {
 	var midHeight = smallGrid.clientHeight + workTitle.clientHeight
 	midSection.style.height = midHeight + "px"
 
 	var endHeight = contactGrid.clientHeight + contactTitle.clientHeight
 	endSection.style.height = endHeight + "px"
-});
+}
+
+// Set height when window loaded
+window.addEventListener("load", setHeights());
+
+// Recalculate height of sections when window resized
+window.addEventListener('resize', setHeights());
