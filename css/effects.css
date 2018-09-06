@@ -28,15 +28,15 @@
 }
 
 .static {
-  background: #FFF;
-}
-
-.mid, .end {
   height: auto;
 }
 
+.mid {
+  background: var(--white);
+}
+
 .end {
-  background: #574162;
+  background: var(--dark-purple);
 }
 
 .bg1::after {
